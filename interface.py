@@ -19,8 +19,7 @@ PAGES = {
 
 col1, col2 = st.columns([4, 1])
 
-# GPT = Gpt(st.secrets["API"])
-GPT = Gpt("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")
+GPT = Gpt(st.secrets["API"])
 
 wishes = GPT.gpt_3("", 1.0, p.generate_prompt_wish, 256)
 st.header("Zyczenia dla Ciebie: " + GPT.gpt_3(wishes, 0.7, p.generate_prompt_translate, 512))
