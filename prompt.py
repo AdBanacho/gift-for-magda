@@ -13,7 +13,7 @@ def generate_prompt_translate(message):
 
 def generate_prompt_story(message):
     return f'''Topic: {message[0]}
-    Three-Sentence {message[0]} Story about {message[0]}: "'''
+    Three-Sentence {message[1]} Story about {message[2]}: "'''
 
 
 def generate_prompt_magda(message):
